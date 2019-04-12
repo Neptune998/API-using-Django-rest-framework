@@ -1,4 +1,4 @@
-# Django_Projects
+# Django_Project
 Django projects
 # Requirements
 
