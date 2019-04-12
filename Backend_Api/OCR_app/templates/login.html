@@ -1,0 +1,20 @@
+{% extends 'header.html' %}
+{% block content %}
+    <h2>Login</h2>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="form-group">
+                <h2>Login</h2>
+                <form method="POST" data-method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div>
+                    <button type="submit" class="btn-success">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

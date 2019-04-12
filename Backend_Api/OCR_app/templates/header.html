@@ -1,0 +1,24 @@
+{% extends 'bootstrap.html' %}
+{% block head %}
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="color: blue" >
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{% url 'OCR_app:home' %}"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="{% url 'OCR_app:home' %}">Home</a></li>
+
+                    <li><a href="{% url 'OCR_app:about' %}">About</a></li>
+                </ul>
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{% url 'OCR_app:login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href="{% url 'OCR_app:signup' %}"><span class="glyphicon glyphicon-user"></span> SignUp</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+{% endblock %}

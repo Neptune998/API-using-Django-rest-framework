@@ -1,0 +1,23 @@
+{% extends 'header.html' %}
+
+<!--{% load static from staticfiles %}-->
+
+{% block content %}
+    {{ title }}
+    <div class="container">
+    <div class="jumbotron">
+    <div class="row1">
+        <div class="col-lg-4">
+            <div class="tumbnail">
+                <img src="{% static 'ocr.jpg' %}" align="middle">
+
+            </div>
+
+            <div class="container">
+                <input type="file" accept="image/*">
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+{% endblock %}
