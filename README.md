@@ -15,6 +15,7 @@ set your service account key using gcloud sdk:-                                 
 # call Api
 
 for calling api see view file of project:-C:\Users\...............\Backend_Api\OCR_app\views.py
+for text extraction view file of project:- C:\Users\...............\Backend_Api\OCR_img_app\views.py
 
 Outputs:-
 See outputs
