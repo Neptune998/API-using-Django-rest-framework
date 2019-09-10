@@ -11,7 +11,7 @@ class ImageView(APIView):
     def get(self, request):
         """Detects text in the file."""
         client = vision.ImageAnnotatorClient()
-        file_name="Location of your image or bucket location where image is stored"
+        file_name="..../image.jpg"
         with io.open(file_name, 'rb') as image_file:
             content = image_file.read()
 
